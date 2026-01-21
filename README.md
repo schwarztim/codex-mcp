@@ -1,11 +1,12 @@
 # Codex MCP - Agent Orchestration for OpenAI Codex CLI
 
-[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/yourusername/codex-mcp/releases)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/schwarztim/codex-mcp/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)](https://www.typescriptlang.org/)
 [![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Tests](https://img.shields.io/badge/tests-23%2F23%20passing-success.svg)](package.json)
 [![MCP](https://img.shields.io/badge/MCP-1.0.4-purple.svg)](https://github.com/modelcontextprotocol/servers)
+[![GitHub](https://img.shields.io/github/stars/schwarztim/codex-mcp?style=social)](https://github.com/schwarztim/codex-mcp)
 
 An MCP (Model Context Protocol) server that orchestrates multiple OpenAI Codex CLI instances as parallel agents with unattended execution and configurable reasoning effort.
 
