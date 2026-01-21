@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach, vi, afterEach } from "vitest";
 import { EventEmitter } from "events";
 import type { ChildProcess } from "child_process";
+import { randomUUID } from "crypto";
 
 // Mock child_process before importing the module
 vi.mock("child_process", () => ({
@@ -115,7 +116,7 @@ describe("Codex MCP Server", () => {
     it("should generate unique agent IDs", () => {
       const ids = new Set();
       for (let i = 0; i < 100; i++) {
-        const id = crypto.randomUUID();
+        const id = randomUUID();
         expect(ids.has(id)).toBe(false);
         ids.add(id);
       }
@@ -257,7 +258,7 @@ describe("Codex MCP Server", () => {
   describe("Process Management", () => {
     it("should track agent metadata correctly", () => {
       const agent = {
-        id: crypto.randomUUID(),
+        id: randomUUID(),
         task: "test task",
         workdir: "/test",
         model: "gpt-5.2-codex",
